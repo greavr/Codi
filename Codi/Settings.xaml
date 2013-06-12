@@ -1,0 +1,27 @@
+﻿<Window x:Class="Codi.Settings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Settings" Height="390" Width="300" WindowStyle="SingleBorderWindow" ResizeMode="NoResize" Loaded="Window_Loaded" Icon="/Codi;component/Images/advanced.png">
+    <Grid Background="{x:Null}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="25" />
+        </Grid.RowDefinitions>
+        <TabControl Grid.Row="0" FontSize="16" Name="tcSettings">
+            <TabItem FontSize="16" Header="SQL" Name="tiSQL">
+                <Grid>
+                    <Label Content="SQL DB:" Height="28" HorizontalAlignment="Left" Margin="15,17,0,0" Name="lblSQL" VerticalAlignment="Top" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="87,22,0,0" Name="txtSQLServer" VerticalAlignment="Top" Width="162" FontSize="14" />
+                    <Label Content="User:" Height="28" HorizontalAlignment="Left" Margin="15,58,0,0" Name="lblSQLUser" VerticalAlignment="Top" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="87,63,0,0" Name="txtSQLuser" VerticalAlignment="Top" Width="162" FontSize="14" />
+                    <Label Content="Password:" Height="28" HorizontalAlignment="Left" Margin="15,104,0,0" Name="lblSQLPWD" VerticalAlignment="Top" />
+                    <PasswordBox Height="23" HorizontalAlignment="Left" Margin="101,109,0,0" Name="txtSQLPwd" VerticalAlignment="Top" Width="148" FontSize="14" />
+                    <Button Content="Test" Height="24" HorizontalAlignment="Left" Margin="87,157,0,0" Name="btnTest" VerticalAlignment="Top"  Width="120" VerticalContentAlignment="Center" Click="btnTest_Click" FontSize="14" />
+                    <Label Content="Last Test" Height="28" HorizontalAlignment="Left" Margin="30,205,0,0" Name="lblLastTest" VerticalAlignment="Top" Width="205" HorizontalContentAlignment="Center" FontSize="14" />
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <Button Content="Save" Grid.Row="1"  Name="btnSave" Width="75" Margin="124,1,76,1" Click="btnSave_Click" />
+        <Button Content="Close" Grid.Row="1"  Name="btnClose" Width="75" Margin="199,1,1,1" Click="btnClose_Click" />
+    </Grid>
+</Window>

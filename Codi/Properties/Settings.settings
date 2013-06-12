@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Codi.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="LastSQLTest" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Never</Value>
+    </Setting>
+    <Setting Name="SQLUser" Type="System.String" Scope="User">
+      <Value Profile="(Default)">CodiUser</Value>
+    </Setting>
+    <Setting Name="SQLPWD" Type="System.String" Scope="User">
+      <Value Profile="(Default)">CodiPassword</Value>
+    </Setting>
+    <Setting Name="SQLDB" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Desktop\Codi</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
